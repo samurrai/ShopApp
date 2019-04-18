@@ -1,0 +1,13 @@
+C:\Users\ШадикьянР\source\repos\ShopApp\ShopApp\bin\Debug\ShopApp.exe.config
+C:\Users\ШадикьянР\source\repos\ShopApp\ShopApp\bin\Debug\ShopApp.exe
+C:\Users\ШадикьянР\source\repos\ShopApp\ShopApp\bin\Debug\ShopApp.pdb
+C:\Users\ШадикьянР\source\repos\ShopApp\ShopApp\bin\Debug\EntityFramework.dll
+C:\Users\ШадикьянР\source\repos\ShopApp\ShopApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ШадикьянР\source\repos\ShopApp\ShopApp\bin\Debug\EntityFramework.xml
+C:\Users\ШадикьянР\source\repos\ShopApp\ShopApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ШадикьянР\source\repos\ShopApp\ShopApp\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\ШадикьянР\source\repos\ShopApp\ShopApp\obj\Debug\ShopApp.csprojAssemblyReference.cache
+C:\Users\ШадикьянР\source\repos\ShopApp\ShopApp\obj\Debug\ShopApp.csproj.CoreCompileInputs.cache
+C:\Users\ШадикьянР\source\repos\ShopApp\ShopApp\obj\Debug\ShopApp.csproj.CopyComplete
+C:\Users\ШадикьянР\source\repos\ShopApp\ShopApp\obj\Debug\ShopApp.exe
+C:\Users\ШадикьянР\source\repos\ShopApp\ShopApp\obj\Debug\ShopApp.pdb
