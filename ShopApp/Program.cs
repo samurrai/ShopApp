@@ -110,6 +110,7 @@ namespace ShopApp
                         Console.WriteLine("Некорректный ввод");
                     }
                 }
+                context.SaveChanges();
             }
         }
 
@@ -144,6 +145,7 @@ namespace ShopApp
             };
             context.Users.Add(user);
             context.Baskets.Add(user.Basket);
+            context.SaveChanges();
             Console.WriteLine("Вы успешно зарегистрировались!");
             return user;
         }
