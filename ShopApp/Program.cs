@@ -23,14 +23,82 @@ namespace ShopApp
                         if (choice == 1)
                         {
                             user = Authorization(context);
+                            break;
                         }
                         else if (choice == 2)
                         {
                             user = Registration(context);
+                            break;
                         }
                         else if (choice == 3)
                         {
-                            break;
+                            Environment.Exit(0);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Некорректный ввод");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Некорректный ввод");
+                    }
+                }
+                while (true)
+                {
+                    Console.WriteLine("1)Добавить продукт в корзину");
+                    Console.WriteLine("2)Просмотреть корзину");
+                    Console.WriteLine("3)Выход");
+                    if (int.TryParse(Console.ReadLine(), out int choice))
+                    {
+                        if (choice == 1)
+                        {
+                            int index = 1;
+                            foreach (var product in context.Products)
+                            {
+                                Console.WriteLine($"{index}){product.Name} - {product.Cost}");
+                                index++;
+                            }
+                            while (true)
+                            {
+                                Console.WriteLine("Введите номер товара");
+                                if (int.TryParse(Console.ReadLine(), out int result))
+                                {
+                                    if (result > 0 && result < context.Products.Count())
+                                    {
+                                        user.Basket.Products.Add(context.Products.ElementAt(result));
+                                        context.Products.ElementAt(result).Baskets.Add(user.Basket);
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Товара с таким номером нет");
+                                    }
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Некорректный ввод");
+                                }
+                            }
+                        }
+                        else if (choice == 2)
+                        {
+                            if (user.Basket.Products.Count > 0)
+                            {
+                                foreach (var product in user.Basket.Products)
+                                {
+                                    Console.WriteLine(product.Name + " - " + product.Cost);
+                                }
+                                Console.WriteLine("Нажмите Enter для продолжения");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Корзина пуста");
+                                Console.WriteLine("Нажмите Enter для продолжения");
+                            }
+                        }
+                        else if (choice == 3)
+                        {
+                            Environment.Exit(0);
                         }
                         else
                         {
